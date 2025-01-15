@@ -1,4 +1,4 @@
-# Your startup name here
+# GigaSnake
 
 [My Notes](notes.md)
 
@@ -18,45 +18,36 @@ A competitive game, based on classic Snake, where each player controls a snake a
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] Proper use of Markdown
-- [ ] A concise and compelling elevator pitch
-- [ ] Description of key features
-- [ ] Description of how you will use each technology
-- [ ] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
+- [x] Proper use of Markdown
+- [x] A concise and compelling elevator pitch
+- [x] Description of key features
+- [x] Description of how you will use each technology
+- [x] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
 
 ### Elevator pitch
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Based on the classis video game Snake, GigaSnake is an online multiplayer game where each player is competing to get the largest snake before death. Each player in a game will be playing on the same board. Collision with the edges of the board or a snake (including one's own snake) will cause a death. A player's score upon death is how long the snake grew, and therefore how much fruit it ate. Players will need to create an account so their high scores can be recorded.
 
 ### Design
 
-![Design image](placeholder.png)
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-```mermaid
-sequenceDiagram
-    actor You
-    actor Website
-    You->>Website: Replace this with your design
-```
+![Image of a handdrawn layout for the pages of the game described above.](DesignImage.jpeg)
 
 ### Key features
 
-- Describe your key feature
-- Describe your key feature
-- Describe your key feature
+- Users will be prompted to create an account or login upon loading the game.
+- Once logged in, users can create a joinable game or join an existing one. Users can join a game with its identifier: a four digit code chosen upon game creation.
+- Gameplay then follows on a 64x64 grid for each player's snake to navigate. The lower portion of the screen has arrowkey buttons to move the snake.
 
 ### Technologies
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Description here
-- **CSS** - Description here
-- **React** - Description here
-- **Service** - Description here
-- **DB/Login** - Description here
-- **WebSocket** - Description here
+- **HTML** - Basic page structure and navigation
+- **CSS** - Styling the various pages to fit different screen sizes and look good.
+- **React** - provide login, create/join games, and arrowkey controls.
+- **Service** - saves high scores and allows for online play.
+- **DB/Login** - High score and User login storage.
+- **WebSocket** - running scores of all players, joinable game hosting.
 
 ## 🚀 AWS deliverable
 
