@@ -53,21 +53,21 @@ I am going to use the required technologies in the following ways.
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Server deployed and accessible with custom domain name** - [My server link](https://yourdomainnamehere.click).
+- [X] **Server deployed and accessible with custom domain name** - [GigaSnake](https://gigasnake.click).
 
 ## 🚀 HTML deliverable
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **HTML pages** - I did not complete this part of the deliverable.
-- [ ] **Proper HTML element usage** - I did not complete this part of the deliverable.
-- [ ] **Links** - I did not complete this part of the deliverable.
-- [ ] **Text** - I did not complete this part of the deliverable.
-- [ ] **3rd party API placeholder** - I did not complete this part of the deliverable.
-- [ ] **Images** - I did not complete this part of the deliverable.
-- [ ] **Login placeholder** - I did not complete this part of the deliverable.
-- [ ] **DB data placeholder** - I did not complete this part of the deliverable.
-- [ ] **WebSocket placeholder** - I did not complete this part of the deliverable.
+- [X] **HTML pages** - I completed this part of the deliverable.
+- [X] **Proper HTML element usage** - I completed this part of the deliverable.
+- [X] **Links** - I completed this part of the deliverable.
+- [X] **Text** - I completed this part of the deliverable.
+- [X] **3rd party API placeholder** - I completed this part of the deliverable.
+- [X] **Images** - I completed this part of the deliverable.
+- [X] **Login placeholder** - I completed this part of the deliverable.
+- [X] **DB data placeholder** - I completed this part of the deliverable.
+- [X] **WebSocket placeholder** - I completed this part of the deliverable.
 
 ## 🚀 CSS deliverable
 
