@@ -1,0 +1,36 @@
+#header {
+    flex: 0 80px;
+    float: left;
+    width: 100vw;
+    height: 15vh;
+    background-color: lightblue;
+    text-align: center;
+}
+
+#main {
+    flex: 1;
+    float: left;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    width: 100vw;
+    height: 35vh;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#footer {
+    flex: 0 30px;
+    float: left;
+    width: 100vw;
+    height: 10vh;
+    background-color: burlywood;
+    text-align: center;
+}
+
+h1 {
+    font: Copperplate 1.2em bold;
+}
+
+h2 {
+    font: Arial 1.0em bold;
+}
