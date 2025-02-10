@@ -16,6 +16,8 @@
     height: 35vh;
     background-color: antiquewhite;
     text-align: center;
+    text-wrap: wrap;
+
 }
 
 #footer {
