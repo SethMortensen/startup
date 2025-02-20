@@ -29,12 +29,6 @@
     left: 0;
 }
 
-.snake {
-    position: absolute;
-    top: 1px;
-    left: 50vw;
-}
-
 #footer {
     flex: 0 80px;
     width: 100vw;
