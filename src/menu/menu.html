@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <title>GigaSnake Menu</title>
-        <link rel="stylesheet" href="css/styles.css"/>
     </head>
 
     <body>
@@ -14,17 +13,17 @@
         <div id="main">
             create game id:
             <input type="text" name="create_code" value="">
-            <a href="play.html">create game</a>
+            <NavLink to="play">create game</NavLink>
             <br>
             join game id:
             <input type="text" name="join_code" value="">
-            <a href="play.html">join game</a>
+            <NavLink to="play">join game</NavLink>
             <br>
-            <a href="leaderboards.html">leaderboards</a>
+            <NavLink to="leaderboards">leaderboards</NavLink>
         </div>
 
         <div id="footer">
-            <a href="index.html">Logout</a>
+            <NavLink to="/">Logout</NavLink>
             <br>
             <a href="https://github.com/SethMortensen/startup">Repository</a>
         </div>
