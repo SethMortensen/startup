@@ -1,4 +1,9 @@
-#header {
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
     flex: 0 80px;
     width: 100vw;
     background-color: lightblue;
@@ -10,7 +15,7 @@
     flex-direction: row;
 }
 
-#main {
+main {
     flex: 1;
     width: 100vw;
     background-color: antiquewhite;
@@ -23,13 +28,7 @@
     flex-direction: row;
 }
 
-.grid {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-#footer {
+footer {
     flex: 0 80px;
     width: 100vw;
     background-color: burlywood;
@@ -51,4 +50,10 @@ h2 {
 
 ol {
     list-style-position: inside;
+}
+
+.grid {
+    position: relative;
+    top: 0;
+    left: 0;
 }

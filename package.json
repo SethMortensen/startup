@@ -1,0 +1,23 @@
+{
+  "name": "startup-react-p1",
+  "version": "1.0.0",
+  "description": "{My Notes}{notes.md}",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SethMortensen/startup"
+  },
+  "author": "Seth Mortensen",
+  "devDependencies": {
+    "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "react-bootstrap": "^2.10.9"
+  }
+}
