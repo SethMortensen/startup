@@ -15,16 +15,37 @@ export default function App() {
                 <header>
                     <h1>GigaSnake</h1>
                     <h2>By Seth Mortensen</h2>
+                    <ul>
+                        <li>
+                            <NavLink to='/'>
+                                Login
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='leaderboards'>
+                                Leaderboards
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='menu'>
+                                Games
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='play'>
+                                Play
+                            </NavLink>
+                        </li>
+                    </ul>
                 </header>
 
                 <Routes>
-                    <Route path='/' element={<Login />} exact />
-                    <Route path='menu' element={<Menu />} />
-                    <Route path='play' element={<Play />} />
-                    <Route path='Leaderboards' element={<Leaderboards />} />
+                    <Route path='/' element={<Login/>} exact />
+                    <Route path='menu' element={<Menu/>} />
+                    <Route path='play' element={<Play/>} />
+                    <Route path='Leaderboards' element={<Leaderboards/>} />
                     <Route path='*' element={<Notfound />} />
                 </Routes>
-
                 <footer>
                     <a href="https://github.com/SethMortensen/startup">Repository</a>
                 </footer>

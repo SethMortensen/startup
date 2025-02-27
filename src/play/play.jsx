@@ -2,8 +2,10 @@ import React from 'react';
 
 export function Play() {
     return (
-        <main className='container-fluid bg-secondary text-center'>
-            <div>play displayed here</div>
+        <main>
+            <img class="grid" src="/grid.png" alt="the grid for snakes to move through"></img>
+            <br></br>
+            <img src="/controls.png" alt="arrow key controls"></img>
         </main>
     )
 }

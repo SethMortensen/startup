@@ -2,8 +2,13 @@ import React from 'react';
 
 export function Menu() {
     return (
-        <main className='container-fluid bg-secondary text-center'>
-            <div>menu displayed here</div>
+        <main>
+            create game id:
+            <input type="text" name="create_code" value=""></input>
+            <br></br>
+            join game id:
+            <input type="text" name="join_code" value=""></input>
+            <br></br>
         </main>
     )
 }
