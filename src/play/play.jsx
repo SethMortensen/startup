@@ -1,11 +1,13 @@
 import React from 'react';
+import './play.css';
 
 export function Play() {
     return (
         <main>
-            <img class="grid" src="/grid.png" alt="the grid for snakes to move through"></img>
-            <br></br>
-            <img src="/controls.png" alt="arrow key controls"></img>
+            <div id='grid'>
+            </div>
+            <div id='controls'>
+            </div>
         </main>
     )
 }
