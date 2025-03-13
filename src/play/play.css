@@ -1,15 +1,14 @@
-#grid {
+#game {
     width: 100vw;
-    height: 80vh;
-    padding-top: 15vh;
-    padding-bottom: 15vh;
-    padding-left: 30vh;
-    padding-right: 30vh;
-    background-image: url('../../public/grid.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    height: 75vh;
 }
+
+canvas {
+    width: 577px;
+    height: 577px;
+    background-image: url('/grid.png')
+}
+
 #controls {
     width: 100vw;
     height: 20vh;
@@ -17,7 +16,39 @@
     padding-bottom: 5vh;
     padding-left: 10vh;
     padding-right: 10vh;
-    background-image: url('../../public/controls.png');
+}
+
+button[name='up'] {
+    width: 80px;
+    height: 80px;
+    background-image: url('/up.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+button[name='down'] {
+    width: 80px;
+    height: 80px;
+    background-image: url('/down.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+button[name='left'] {
+    width: 80px;
+    height: 80px;
+    background-image: url('/left.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+button[name='right'] {
+    width: 80px;
+    height: 80px;
+    background-image: url('/right.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

@@ -21,7 +21,7 @@ main {
     background-color: antiquewhite;
     text-align: center;
     text-wrap: wrap;
-    padding-top: 40vh;
+    padding-top: 15vh;
     padding-bottom: 40vh;
     padding-left: 20px;
     padding-right: 20px;
@@ -54,7 +54,7 @@ ol {
 
 ul {
     list-style-position: inside;
-    list-style-image: url('../public/SnakeBlock.png');
+    list-style-image: url('/SnakeBlock.png');
 }
 
 .grid {
