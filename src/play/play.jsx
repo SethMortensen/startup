@@ -253,8 +253,8 @@ function check_collision(interval) {
 }
 
 function start_interval() {
-    let interval = setInterval(movement, 300);
-    let check_interval = setInterval(check_collision, 300, interval);
+    let interval = setInterval(movement, 100);
+    let check_interval = setInterval(check_collision, 100, interval);
 }
 
 export function Play() {
