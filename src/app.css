@@ -56,9 +56,3 @@ ul {
     list-style-position: inside;
     list-style-image: url('/SnakeBlock.png');
 }
-
-.grid {
-    position: relative;
-    top: 0;
-    left: 0;
-}

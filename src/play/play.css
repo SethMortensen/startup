@@ -1,21 +1,15 @@
 #game {
     width: 100vw;
-    height: 75vh;
+    height: 70vh;
 }
 
 canvas {
-    width: 577px;
-    height: 577px;
-    background-image: url('/grid.png')
+    background-image: url('/grid.png');
 }
 
 #controls {
     width: 100vw;
-    height: 20vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    padding-left: 10vh;
-    padding-right: 10vh;
+    height: 15vh;
 }
 
 button[name='up'] {

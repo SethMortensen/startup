@@ -49,6 +49,7 @@ class Snake {
         for (let b = 0; b < this.length; b++) {
             this.blocks.pop();
         }
+        document.getElementById('score').innerHTML = "Score = " + (this.length - 4);
         this.length = 0;
     }
     
@@ -256,13 +257,12 @@ function start_interval() {
     let check_interval = setInterval(check_collision, 300, interval);
 }
 
-
 export function Play() {
     return (
         <main>
             <div id='game'>
                 <canvas id='field' width='577' height='577'></canvas>
-                <div>Score = {Player.length - 4}</div>
+                <div id='score'></div>
             </div>
             <div id='controls'>
                 <button name='up' onClick={up}></button>
