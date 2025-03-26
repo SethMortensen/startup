@@ -9,38 +9,23 @@ import { Play } from './play/play'
 import { Leaderboards } from './leaderboards/leaderboards'
 
 export default function App() {
+    const [user, setUser] = React.useState(localStorage.getItem('user') || null);
     return (
         <BrowserRouter>
             <div className='app'>
                 <header>
                     <h1>GigaSnake</h1>
                     <h2>By Seth Mortensen</h2>
-                    <ul>
-                        <li>
-                            <NavLink to='/'>
-                                Login
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='leaderboards'>
-                                Leaderboards
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='menu'>
-                                Games
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='play'>
-                                Play
-                            </NavLink>
-                        </li>
-                    </ul>
+                    <h3>{user}</h3>
+                    {user == null &&<NavLink to='/'>Login</NavLink>}
+                    <br/>
+                    <NavLink to='leaderboards'>Leaderboards</NavLink>
+                    <br/>
+                    {user && <NavLink to='menu'>Games</NavLink>}
                 </header>
 
                 <Routes>
-                    <Route path='/' element={<Login/>} exact />
+                    <Route path='/' element={<Login setUser={setUser}/>} exact />
                     <Route path='menu' element={<Menu/>} />
                     <Route path='play' element={<Play/>} />
                     <Route path='Leaderboards' element={<Leaderboards/>} />

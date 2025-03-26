@@ -5,11 +5,11 @@ export function Leaderboards() {
         <main>
             High Scores
             <ol>
-                <li>Name 1: Score 1</li>
-                <li>Name 2: Score 2</li>
-                <li>Name 3: Score 3</li>
-                <li>Name 4: Score 4</li>
-                <li>Name 5: Score 5</li>
+                <li>{JSON.parse(localStorage.getItem('scores'))[0]}</li>
+                <li>{JSON.parse(localStorage.getItem('scores'))[1]}</li>
+                <li>{JSON.parse(localStorage.getItem('scores'))[2]}</li>
+                <li>{JSON.parse(localStorage.getItem('scores'))[3]}</li>
+                <li>{JSON.parse(localStorage.getItem('scores'))[4]}</li>
             </ol>
         </main>
     )

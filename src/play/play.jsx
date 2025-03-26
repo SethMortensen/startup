@@ -1,5 +1,39 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
 import './play.css';
+
+let highScores = [['', 0], ['', 0], ['', 0], ['', 0], ['', 0]];
+let score;
+let check_coords;
+localStorage.setItem('scores', JSON.stringify(highScores));
+function check_high_score(score) {
+    if (score > highScores[4][1]) {
+        if (score > highScores[3][1]) {
+            if (score > highScores[2][1]) {
+                if (score > highScores[1][1]) {
+                    if (score > highScores[0][1]) {
+                        highScores[0][0] = (localStorage.getItem('user') + ': ');
+                        highScores[0][1] = score;
+                    } else {
+                        highScores[1][0] = (localStorage.getItem('user') + ': ');
+                        highScores[1][1] = score;
+                    }
+                } else {
+                    highScores[2][0] = (localStorage.getItem('user') + ': ');
+                    highScores[2][1] = score;
+                }
+            } else {
+                highScores[3][0] = (localStorage.getItem('user') + ': ');
+                highScores[3][1] = score;
+            }
+        } else {
+            highScores[4][0] = (localStorage.getItem('user') + ': ');
+            highScores[4][1] = score;
+        }
+    }
+    localStorage.removeItem('scores');
+    localStorage.setItem('scores', JSON.stringify(highScores));
+}
 
 class Grid {
     constructor(width, height) {
@@ -50,7 +84,11 @@ class Snake {
             this.blocks.pop();
         }
         document.getElementById('score').innerHTML = "Score = " + (this.length - 4);
+        score = this.length - 4;
         this.length = 0;
+        check_coords = 2;
+        check_high_score(score);
+
     }
     
     move(direction) {
@@ -193,7 +231,24 @@ function right() {
 let game_screen = new Grid(64, 64);
 let Player = new Snake(4, 15, 31, game_screen);
 let apple = [20, 31];
-let check_coords;
+
+document.addEventListener('keydown', function (event) {
+    const key = event.key;
+    switch (key) {
+        case "a":
+            left();
+            break;
+        case "d":
+            right();
+            break;
+        case "w":
+            up();
+            break;
+        case "s":
+            down();
+            break;
+    }
+});
 
 function new_apple() {
     let coords = [random_coords(0, 63), random_coords(0, 63)];
@@ -258,6 +313,15 @@ function start_interval() {
 }
 
 export function Play() {
+    const navigate = useNavigate();
+
+    function Logout() {
+        if (localStorage.getItem('user') != null) {
+            localStorage.removeItem('user');
+            navigate('/');
+        }
+    }
+    
     return (
         <main>
             <div id='game'>
@@ -272,6 +336,7 @@ export function Play() {
                 <button name='right' onClick={right}></button>
                 <br></br>
                 <button name='start' onClick={start_interval}>Start</button>
+                <button onClick={Logout}>Logout</button>
             </div>
         </main>
     )
